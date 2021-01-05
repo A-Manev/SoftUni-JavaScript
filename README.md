@@ -1,7 +1,7 @@
 # SoftUni Software Engineering
 # <p align="center">Courses from the software engineering program in SoftUni<p>
 
-<a href="https://softuni.bg/trainings/courses" rel="Courses">  ![SoftUni logo][logo] <a/>
+<p align="center"><a href="https://softuni.bg/trainings/courses" rel="Courses">  ![SoftUni logo][logo] <a/><p>
 
 [logo]: https://softuni.bg/Files/Publications/2018/01/JavaScript-_14157509.jpg "Logo Title Text 2"
 
