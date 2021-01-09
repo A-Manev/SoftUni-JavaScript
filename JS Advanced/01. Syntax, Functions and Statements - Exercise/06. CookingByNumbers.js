@@ -1,4 +1,4 @@
-function cookingByNumbers(input) {
+function cookingByNumbers(...input) {
     let startNumber = Number(input.shift());
 
     let operations = {
@@ -37,5 +37,5 @@ function cookingByNumbers(input) {
     // }
 }
 
-cookingByNumbers(['32', 'chop', 'chop', 'chop', 'chop', 'chop']);
-cookingByNumbers(['9', 'dice', 'spice', 'chop', 'bake', 'fillet']);
+cookingByNumbers('32', 'chop', 'chop', 'chop', 'chop', 'chop');
+cookingByNumbers('9', 'dice', 'spice', 'chop', 'bake', 'fillet');
