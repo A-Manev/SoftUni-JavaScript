@@ -2,7 +2,6 @@ function addAndRemoveFromArray(commands) {
     let result = [];
 
     for (let i = 0; i < commands.length; i++) {
-
         if (commands[i] === 'add') {
             result.push(i + 1);
         } else {
