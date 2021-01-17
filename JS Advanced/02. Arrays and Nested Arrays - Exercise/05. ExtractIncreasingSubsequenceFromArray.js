@@ -1,14 +1,22 @@
 function extractsIncreasingSubsequenceFromArray(numbers) {
-    let result = [];
+    // let result = [];
 
-    result.push(numbers.shift());
-    for (const item of numbers) {
-        if (result[result.length - 1] <= item) {
-            result.push(item);
+    // result.push(numbers.shift());
+    // for (const item of numbers) {
+    //     if (result[result.length - 1] <= item) {
+    //         result.push(item);
+    //     }
+    // }
+
+    // return result;
+
+    return numbers.reduce(function (result, currentValue) {
+        if (currentValue >= result[result.length - 1] || result.length === 0) {
+            result.push(currentValue);
         }
-    }
 
-    return result;
+        return result;
+    }, []);
 }
 
 console.log(extractsIncreasingSubsequenceFromArray([
