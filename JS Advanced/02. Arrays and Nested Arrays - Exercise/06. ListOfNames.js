@@ -1,13 +1,18 @@
 function sortsNames(names) {
-    let result = '';
+    // let result = '';
 
-    names.sort((a, b) => a.localeCompare(b));
+    // names.sort((a, b) => a.localeCompare(b));
 
-    for (let i = 0; i < names.length; i++) {
-        result += `${i + 1}.${names[i]}` + '\n';
-    }
+    // for (let i = 0; i < names.length; i++) {
+    //     result += `${i + 1}.${names[i]}` + '\n';
+    // }
 
-    return result;
+    // return result;
+
+    return names
+        .sort((a, b) => a.localeCompare(b))
+        .map((element, index) => `${++index}.${element}`)
+        .join('\n');
 }
 
 console.log(sortsNames(["John", "Bob", "Christina", "Ema"]));
