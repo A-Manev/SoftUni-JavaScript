@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>SoftWiki</title>
+</head>
+
+<body id="root">
+    <div id="container">
+
+        <!-- Header -->
+        <header>
+            <h1><a class="home" href="#">SoftWiki</a></h1>
+            <nav class="nav-buttons">
+                <a href="#">Catalogue</a>
+                <a href="#">Search</a>
+                <!-- <div id="user">
+                    <a href="#">Create</a>
+                    <a href="#">Logout</a>
+                </div> -->
+                <div id="guest">
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                </div>
+            </nav>
+        </header>
+            <!-- Main dynamic content -->
+        <main id="main-content">
+        </main>
+
+        <!-- Home -->
+        <section id="home-page" class="content">
+            <h1>Recent Articles</h1>
+            <section class="recent js">
+                <h2>JavaScript</h2>
+                <article>
+                    <h3>Arrays</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint enim nostrum aperiam eius nulla
+                        reprehenderit fuga tempora corporis cupiditate quae, possimus illo quidem sunt numquam quibusdam
+                        repellendus earum harum minima aspernatur? Recusandae, esse. Delectus officiis veritatis soluta
+                        dolor cumque, nam, debitis numquam deleniti quo corporis accusamus ratione reiciendis corrupti.
+                        Est unde nihil deleniti praesentium consequatur, quidem, harum ut porro in minus, velit magnam.
+                        Assumenda temporibus odio veniam sit provident illo consectetur! In ipsam ab corrupti nesciunt
+                        eum, optio est molestias, nam modi neque quisquam quia corporis, consectetur delectus deserunt
+                        quo. Suscipit maiores esse officiis, non obcaecati quibusdam. Distinctio totam quibusdam a
+                        blanditiis.</p>
+                    <a href="#" class="btn details-btn">Details</a>
+                </article>
+            </section>
+            <section class="recent csharp">
+                <h2>C#</h2>
+                <article>
+                    <h3>Dictionary</h3>
+                    <p>Voluptates quos recusandae vero odit ex doloremque error ut iure praesentium hic
+                        ducimus, dolore numquam iste ab dolor repellat quam. Illo omnis nemo, voluptates id aliquam,
+                        ratione nulla veritatis aspernatur ducimus odio a et soluta accusantium eaque, deserunt numquam.
+                        Fuga dicta laboriosam incidunt deleniti quos, optio velit itaque quis nulla, est officiis nemo,
+                        consequatur eius. Non tempora eaque odit debitis amet excepturi eos? Nemo sit tempore, aliquid
+                        pariatur natus magni dolore cum molestias distinctio, dolores, quibusdam asperiores!
+                        Reprehenderit magni, reiciendis amet perspiciatis vitae ad nisi quia quos rem sint,
+                        consequuntur, quaerat nostrum. Iure velit consequuntur, magnam in ullam quis neque sed magni
+                        perspiciatis repudiandae possimus sint fuga, molestias accusamus reiciendis necessitatibus!</p>
+                    <a href="#" class="btn details-btn">Details</a>
+                </article>
+            </section>
+            <section class="recent java">
+                <h2>Java</h2>
+                <article>
+                    <h3>JDK</h3>
+                    <p>Abblanditiis odit eaque nobis autem quisquam quod numquam molestiae, debitis rerum distinctio,
+                        iure neque incidunt quidem est facere aliquam totam ducimus in rem magnam minus beatae
+                        repudiandae! Corrupti consequatur quidem porro, fugit veritatis earum? Temporibus in eligendi
+                        voluptatem quaerat id. Vel beatae possimus corrupti sed praesentium! Voluptatum, reiciendis
+                        aliquam? Doloremque repudiandae dolor nisi perspiciatis id esse et placeat sint iste assumenda
+                        adipisci nostrum minima, recusandae laudantium fugit tempore saepe magnam! Fugit, veniam!
+                        Veritatis eos quas odit, repellendus eligendi tempore numquam architecto? Odit eos aut dolore
+                        reprehenderit dignissimos esse dolores consequuntur, incidunt est vero maiores repudiandae rem
+                        hic nulla mollitia nihil nobis deserunt quia.</p>
+                    <a href="#" class="btn details-btn">Details</a>
+                </article>
+            </section>
+            <section class="recent python">
+                <h2>Python</h2>
+                <h3 class="no-articles">No articles yet</h3>
+            </section>
+        </section>
+
+        <!-- Login -->
+        <section id="login-page" class="content auth">
+            <h1>Login</h1>
+
+            <form id="login" action="#" method="">
+                <fieldset>
+                    <blockquote>Knowledge is like money: to be of value it must circulate, and in circulating it can
+                        increase in quantity and, hopefully, in value</blockquote>
+                    <p class="field email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="maria@email.com">
+                    </p>
+                    <p class="field password">
+                        <label for="login-pass">Password:</label>
+                        <input type="password" id="login-pass" name="password">
+                    </p>
+                    <p class="field submit">
+                        <input class="btn submit" type="submit" value="Log in">
+                    </p>
+                    <p class="field">
+                        <span>If you don't have profile click <a href="#">here</a></span>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Register -->
+        <section id="register-page" class="content auth">
+            <h1>Register</h1>
+
+            <form id="register" action="#" method="">
+                <fieldset>
+                    <blockquote>Knowledge is not simply another commodity. On the contrary. Knowledge is never used up.
+                        It
+                        increases by diffusion and grows by dispersion.</blockquote>
+                    <p class="field email">
+                        <label for="register-email">Email:</label>
+                        <input type="email" id="register-email" name="email" placeholder="maria@email.com">
+                    </p>
+                    <p class="field password">
+                        <label for="register-pass">Password:</label>
+                        <input type="password" name="password" id="register-pass">
+                    </p>
+                    <p class="field password">
+                        <label for="register-rep-pass">Repeat password:</label>
+                        <input type="password" name="rep-pass" id="register-rep-pass">
+                    </p>
+                    <p class="field submit">
+                        <input class="btn submit" type="submit" value="Register">
+                    </p>
+                    <p class="field">
+                        <span>If you already have profile click <a href="#">here</a></span>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+
+        <!-- catalogue -->
+        <section id="catalog-page" class="content catalogue">
+            <h1>All Articles</h1>
+
+            <a class="article-preview" href="#">
+                <article>
+                    <h3>Topic: <span>Arrays</span></h3>
+                    <p>Category: <span>Javascript</span></p>
+                </article>
+            </a>
+            <a class="article-preview" href="#">
+                <article>
+                    <h3>Topic: <span>Tuples and Sets</span></h3>
+                    <p>Category: <span>Python</span></p>
+                </article>
+            </a>
+            <a class="article-preview" href="#">
+                <article>
+                    <h3>Topic: <span>Stacks and Queues</span></h3>
+                    <p>Category: <span>Java</span></p>
+                </article>
+            </a>
+            <a class="article-preview" href="#">
+                <article>
+                    <h3>Topic: <span>Lists</span></h3>
+                    <p>Category: <span>C#</span></p>
+                </article>
+            </a>
+            <a class="article-preview" href="#">
+                <article>
+                    <h3>Topic: <span>Classes</span></h3>
+                    <p>Category: <span>Javascript</span></p>
+                </article>
+            </a>
+
+            <!-- No articles message -->
+            <h3 class="no-articles">No articles yet</h3>
+        </section>
+
+        <!-- Create -->
+        <section id="create-page" class="content">
+            <h1>Create Article</h1>
+
+            <form id="create" action="#" method="">
+                <fieldset>
+                    <p class="field title">
+                        <label for="create-title">Title:</label>
+                        <input type="text" id="create-title" name="title" placeholder="Enter article title">
+                    </p>
+
+                    <p class="field category">
+                        <label for="create-category">Category:</label>
+                        <input type="text" id="create-category" name="category" placeholder="Enter article category">
+                    </p>
+                    <p class="field">
+                        <label for="create-content">Content:</label>
+                        <textarea name="content" id="create-content"></textarea>
+                    </p>
+
+                    <p class="field submit">
+                        <input class="btn submit" type="submit" value="Create">
+                    </p>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Edit -->
+        <section id="edit-page" class="content">
+            <h1>Edit Article</h1>
+
+            <form id="edit" action="#" method="">
+                <fieldset>
+                    <p class="field title">
+                        <label for="title">Title:</label>
+                        <input type="text" name="title" id="title" placeholder="Enter article title">
+                    </p>
+
+                    <p class="field category">
+                        <label for="category">Category:</label>
+                        <input type="text" name="category" id="category" placeholder="Enter article category">
+                    </p>
+                    <p class="field">
+                        <label for="content">Content:</label>
+                        <textarea name="content" id="content"></textarea>
+                    </p>
+
+                    <p class="field submit">
+                        <input class="btn submit" type="submit" value="Save Changes">
+                    </p>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Details -->
+        <section id="details-page" class="content details">
+            <h1>Arrays</h1>
+
+            <div class="details-content">
+                <strong>Published in category JavaScript</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint enim nostrum aperiam eius nulla
+                    reprehenderit fuga tempora corporis cupiditate quae, possimus illo quidem sunt numquam quibusdam
+                    repellendus earum harum minima aspernatur? Recusandae, esse. Delectus officiis veritatis soluta
+                    dolor cumque, nam, debitis numquam deleniti quo corporis accusamus ratione reiciendis corrupti.
+                    Est unde nihil deleniti praesentium consequatur, quidem, harum ut porro in minus, velit magnam.
+                    Assumenda temporibus odio veniam sit provident illo consectetur! In ipsam ab corrupti nesciunt
+                    eum, optio est molestias, nam modi neque quisquam quia corporis, consectetur delectus deserunt
+                    quo. Suscipit maiores esse officiis, non obcaecati quibusdam. Distinctio totam quibusdam a
+                    blanditiis.</p>
+
+                <div class="buttons">
+                    <a href="#" class="btn delete">Delete</a>
+                    <a href="#" class="btn edit">Edit</a>
+                    <a href="#" class="btn edit">Back</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search  -->
+        <section id="search-page" class="content">
+            <h1>Search</h1>
+            <form id="search-form">
+                <p class="field search">
+                    <input type="text" placeholder="Search by article title" name="search">
+                </p>
+                <p class="field submit">
+                    <input class="btn submit" type="submit" value="Search">
+                </p>
+            </form>
+            <div class="search-container">
+                <a class="article-preview" href="#">
+                    <article>
+                        <h3>Topic: <span>Arrays</span></h3>
+                        <p>Category: <span>Javascript</span></p>
+                    </article>
+                </a>
+                <a class="article-preview" href="#">
+                    <article>
+                        <h3>Topic: <span>Tuples and Sets</span></h3>
+                        <p>Category: <span>Python</span></p>
+                    </article>
+                </a>
+                <a class="article-preview" href="#">
+                    <article>
+                        <h3>Topic: <span>Stacks and Queues</span></h3>
+                        <p>Category: <span>JAVA</span></p>
+                    </article>
+                </a>
+                <a class="article-preview" href="#">
+                    <article>
+                        <h3>Topic: <span>Lists</span></h3>
+                        <p>Category: <span>C#</span></p>
+                    </article>
+                </a>
+                <a class="article-preview" href="#">
+                    <article>
+                        <h3>Topic: <span>Classes</span></h3>
+                        <p>Category: <span>Javascript</span></p>
+                    </article>
+                </a>
+
+                <h3 class="no-articles">No matching articles</h3>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>My Site © Show info....</footer>
+
+    </div>
+</body>
+
+</html>
