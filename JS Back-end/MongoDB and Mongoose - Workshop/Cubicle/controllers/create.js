@@ -10,7 +10,13 @@ module.exports = {
             difficulty: Number(req.body.difficulty)
         };
 
-        await req.storage.create(cube);
+        try {
+            await req.storage.create(cube);
+        } catch (error) {
+            if (error.name == 'ValidationError') {
+                return res.render('create', {title: 'Create Cube', error: 'All field are required.'});
+            }
+        }
         
         res.redirect('/');
     }
