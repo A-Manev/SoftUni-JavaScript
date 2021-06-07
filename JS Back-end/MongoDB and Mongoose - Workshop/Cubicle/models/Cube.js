@@ -6,6 +6,7 @@ const schema = new Schema({
     imageUrl: { type: String, required: true, match: /^https?:\/\// },
     difficulty: { type: Number, required: true, min: 1, max: 6 },
     comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
+    accessories: [{ type: Schema.Types.ObjectId, ref: 'Accessory' }],
 });
 
 module.exports = model('Cube', schema);
