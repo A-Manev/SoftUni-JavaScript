@@ -1,0 +1,15 @@
+<main>
+    <form action="/auth/login" method="POST">
+        <h2>Login</h2>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Username" value="{{userData.username}}">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+
+        <button class="btn" type="submit">Login</button>
+    </form>
+</main>
